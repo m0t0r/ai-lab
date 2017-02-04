@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MaterialModule } from '@angular/material';
 import { SharedModule } from './sections/shared/shared.module';
 
 import { AppComponent } from './app.component';
@@ -17,8 +16,7 @@ import { appRoutes } from './app.routes';
   imports: [
     BrowserModule,
     SharedModule,
-    RouterModule.forRoot(appRoutes),
-    MaterialModule.forRoot()
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

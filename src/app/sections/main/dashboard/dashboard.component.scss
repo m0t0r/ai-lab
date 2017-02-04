@@ -1,0 +1,48 @@
+.dashboard-title {
+  padding-left: 16px;
+}
+
+.experiments-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.experiment-cards-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+experiment-card {
+  box-sizing: border-box;
+  margin: 0 16px 16px;
+}
+
+@media screen and (min-width: 768px) {
+
+  experiment-card {
+    max-width: calc(50% - 32px);
+  }
+
+  experiment-card:nth-child(even) {
+    margin: 0 0 16px;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+  .dashboard-title {
+    padding-left: 0;
+  }
+
+  experiment-card,
+  experiment-card:nth-child(even) {
+    max-width: 30%;
+    margin: 0 0 2%;
+  }
+
+  experiment-card:not(:last-child) {
+    margin-right: 2%;
+  }
+
+}

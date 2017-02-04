@@ -1,3 +1,11 @@
-<p>
-  dashboard works!
-</p>
+<md-toolbar color="primary">
+  <span>AI Lab</span>
+</md-toolbar>
+
+<div class="experiments-container">
+  <h2 class="dashboard-title">Available Experiments</h2>
+
+  <div class="experiment-cards-container">
+    <experiment-card [data]="card" *ngFor="let card of fakeCards"></experiment-card>
+  </div>
+</div>
