@@ -1,0 +1,59 @@
+.ai-console-container {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  width: 40%;
+  max-width: 40%;
+  border: 1px solid #bbb;
+  background: white;
+  border-radius: 2px;
+}
+
+.ai-console-toolbar {
+  height: 50px;
+  background: #3f51b5;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.ai-console-toolbar h2 {
+  font-size: .9em;
+  margin: 0 0 0 16px;
+  font-weight: 300;
+}
+
+.ai-console-response {
+  padding: 16px;
+  min-height: 100px;
+  max-height: 100px;
+  overflow: auto;
+}
+
+.ai-console-response p {
+  margin: 0;
+  font-size: .8rem;
+  color: #584d4d;
+}
+.ai-console-text {
+  border-top: 1px solid #c1b3b3;
+  border-bottom: 1px solid #c1b3b3;
+}
+
+#ai-console-textarea {
+  display: inline-block;
+  width: 100% ;
+  border: none;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 16px 16px 0;
+  min-height: 80px;
+  font-size: .8rem;
+}
+
+.ai-console-controls {
+  background: #eee;
+  padding: 5px 16px;
+}
